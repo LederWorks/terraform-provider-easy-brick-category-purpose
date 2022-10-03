@@ -2,8 +2,7 @@
 # terraform-azurerm-easy-brick-compute-managed-disk
 LederWorks Easy Compute Managed Disk Brick Module
 
-## Authors
-  - [Bence Bánó](mailto:bence.bano@lederworks.com)
+This module were created by [LederWorks](https://lederworks.com) IaC enthusiasts.
 
 ## About This Module
 This module implements the [SECTION](https://lederworks.com/docs/microsoft-azure/bricks/compute/#section) reference Insight.
