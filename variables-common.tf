@@ -14,7 +14,7 @@ variable "resource_group_object" {
 }
 
 variable "tags" {
-  description = "BYO Tags, as a map(string)"
+  description = "(Optional) Your Azure tags, as a map(string)"
   type = map(string)
   default = null
 }
