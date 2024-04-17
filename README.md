@@ -22,30 +22,46 @@ This module implements the [SECTION](https://lederworks.com/docs/microsoft-azure
 
 The following requirements are needed by this module:
 
-- <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) (>=1.3.4, < 1.6.0)
+- <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) (>= 1.3.6)
 
-- <a name="requirement_azapi"></a> [azapi](#requirement\_azapi) (>=0.5.0, < 1.0)
+- <a name="requirement_azapi"></a> [azapi](#requirement\_azapi) (>= 1.0.0)
 
-- <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) (>= 3.14.0, < 4.0)
+- <a name="requirement_azurerm"></a> [azurerm](#requirement\_azurerm) (>= 3.60.0)
 
-- <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) (>=2.11.0, < 3.0)
+- <a name="requirement_kubernetes"></a> [kubernetes](#requirement\_kubernetes) (>= 2.11.0)
 
 ## Providers
 
 The following providers are used by this module:
 
-- <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) (>= 3.14.0, < 4.0)
+- <a name="provider_azurerm"></a> [azurerm](#provider\_azurerm) (>= 3.60.0)
 
 ## Examples
 
 ### Example 1
 ```hcl
-#Example
-```
+# Module Test
+module "terratest-category-purpose" {
+  source = "../"
 
-### Example 2
-```hcl
-#Example
+  #Subscription
+  # subscription_id = data.azurerm_client_config.current.subscription_id
+
+  #Resource Group
+  # resource_group_object = azurerm_resource_group.RGRP
+
+  #Tags
+  # tags = local.tags
+
+  ### Common Variables ###
+
+  ### General Variables ###
+
+  ### Global Variables ###
+
+  ### Local Variables ###
+
+}
 ```
 
 ## Resources
@@ -71,6 +87,14 @@ Type: `any`
 ## Optional Inputs
 
 The following input variables are optional (have default values):
+
+### <a name="input_context"></a> [context](#input\_context)
+
+Description: Context Module
+
+Type: `any`
+
+Default: `null`
 
 ### <a name="input_tags"></a> [tags](#input\_tags)
 

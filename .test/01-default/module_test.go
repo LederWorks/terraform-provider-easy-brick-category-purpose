@@ -5,7 +5,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/LederWorks/golang-easy-terratest.git/rgrp"
+	"github.com/LederWorks/golang-easy-terratest/rgrp"
 
 	"github.com/gruntwork-io/terratest/modules/terraform"
 )
@@ -15,7 +15,7 @@ func TestTerraform(t *testing.T) {
 
 	// Retryable errors in terraform testing.
 	terraformOptions := terraform.WithDefaultRetryableErrors(t, &terraform.Options{
-		TerraformDir: ".",
+		TerraformDir: "../../examples/01-default",
 		Upgrade:      true,
 		BackendConfig: map[string]interface{}{
 			"tenant_id":            os.Getenv("ARM_TENANT_ID"),

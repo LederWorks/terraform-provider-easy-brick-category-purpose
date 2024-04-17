@@ -1,12 +1,7 @@
 name: Terratest - terraform-provider-easy-brick-category-purpose
 
 # on:
-#   push:
-#     branches:
-#       - main
-
-on:
-  - pull_request
+#   - pull_request
 
 jobs:
   build:
