@@ -1,6 +1,10 @@
 # Change Log
 
-## v0.3.0 [current]
+## v0.3.1 [current]
+BUG FIXES:
+- Updated copyright to 2024
+
+## v0.3.0
 FEATURES:
 - Added pull request template
 
